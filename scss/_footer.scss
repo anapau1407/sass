@@ -1,0 +1,26 @@
+
+/*.tituloFooter, .fuenteFooter1, .fuenteFooter2, .fuenteFooter3, .fuenteFooter4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #be8e2c;
+}*/
+$footer:(
+    colorFondo:$colorNegro,
+    centrado: center,
+    familiaTexto: verdana,
+    colorTxt:$colorTextos,
+    justificado: center,
+    sinPuntos: none,
+    centradoY: center
+);
+
+footer{
+    background-color: map-get($footer, colorFondo );
+    text-align: map-get($footer, centrado );
+    font-family: map-get($footer, familiaTexto );
+    color: map-get($footer, colorTxt );
+    justify-content: map-get($footer , justificado );
+    align-items: map-get($footer,centradoY );
+}
+li{
+    list-style-type:none;
+}

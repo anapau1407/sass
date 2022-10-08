@@ -20,38 +20,41 @@
 <body>
     <div class="row bg-black">
       <div class="col-12 col-lg-12">
-        <div class="logo desk">
-          <img src="assets/seguro.jpg" height="150" width="150">
+        <div class="logo">
+          <img class="img-fluid" src="assets/seguro.jpg" height="150" width="150">
         </div>
       </div>
     </div>
   <header>
-    <div class="row bg-black">
+    <div class="row bg-black mb-4">
       <div class="col-lg-3 bg-black"></div>
-      <div class="col-12 col-lg-6 bg-black">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="col-12 col-lg-6">
+          <nav class="navbar navbar-expand-lg mb-4 navegador navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">HOME</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="pages/productores.html">PRODUCTORES</a>
+              <div class="collapse navbar-collapse navList" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="pages/asegurados.html">ASEGURADOS</a>
+                      <a class="nav-link active text-white " aria-current="page" href="pages/productores.html">PRODUCTORES</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="pages/novedades.html">NOVEDADES</a>
+                      <a class="nav-link active text-white" href="pages/asegurados.html">ASEGURADOS</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                      <a class="nav-link active text-white" href="pages/novedades.html">NOVEDADES</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item">
+                      <a class="nav-link active text-white" href="pages/contacto.html">CONTACTO</a>
+                  </li>
+                  <!--ESTA PARTE DEL CODIGO LO VOY A TERMINAR MAS ADELANTE YA QUE SON 4 PAGINAS MAS-->
+                  <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
                       COBERTURAS
@@ -61,7 +64,7 @@
                       <li><a class="dropdown-item" href="#">GALENO</a></li>
                       <li><a class="dropdown-item" href="#">EXPERTA</a></li>
                     </ul>
-                  </li>
+                  </li>-->
                 </ul>
               </div>
             </div>
@@ -71,7 +74,7 @@
       <div class="col-lg-3 bg-black"></div>
     </div> 
   </header>
-  <div class="row">
+  <div class="row mt-4">
       <div class="col-12 col-lg-12">
         <div class="tituloPrincipal formato">
           <h1 class="naranja" data-aos="fade-down"> Bienvenidos</h1>
@@ -89,8 +92,8 @@
       </div>
   </div>
         <!--CARRUSEL-->
-  <div class="row">
-    <div class="col-12 col-lg-12"> 
+  <div class="row mt-2 mb-2 centrado">
+    <div class="col-12 col-lg-10 "> 
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -125,21 +128,21 @@
       <div class="titImg categorias">
           <img src="assets/buscador.png" alt="buscador">
           <h3 class="">Sin letra chica</h3>
-          <p class="titImg">Tu seguro tiene que ser fácil de entender. Si algo no es claro, preguntanos.</p>
+          <p>Tu seguro tiene que ser fácil de entender. Si algo no es claro, preguntanos.</p>
       </div>
     </div>
     <div class="col-12 col-lg-4">
       <div class=" titImg categorias">
           <img src="assets/estamossiempre.png" alt="estamossiempre">
           <h3 class="">Estamos siempre.</h3>
-          <p class="titImg">Encontranos en nuestros canales :teléfono, chat, mail o redes sociales.</p>
+          <p>Encontranos en nuestros canales :teléfono, chat, mail o redes sociales.</p>
       </div>
     </div>
     <div class="col-12 col-lg-4">
       <div class="titImg categorias">
           <img src="assets/planesinsuperables.png" alt="nuestrosplanes">
           <h3 class="">Planes insuperables.</h3>
-          <p class="titImg">Coberturas y servicios únicos a un precio increíble.</p>    
+          <p>Coberturas y servicios únicos a un precio increíble.</p>    
       </div>
     </div>
   </div>
@@ -147,14 +150,17 @@
     <div class="row"> 
       <div class="col-12 col-lg-12"> 
         <div class="container justify-content-center py-5">
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;"><a href="#">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZlJREFUSEvdVdtVwkAQvcMhu+RLO5AODBWIFRgrUCsQK1AqMCXQgaEC6UDoIFQgfMFuQsazQjRvIh5+2K+c3Zl7Z+7enRCOvOjI+DgxAmY+J6JFnWwmJtL6EYALwGEgIGBkSTk0eZFSbltKP8HISKSVCkDkCiGmVSThej0B0VXJuclxmPlJdDpegUBr7RDzB4AF4vjWsu1JHiQVU8U/ZWAGIi8pMtNBqBT/ZBJ5bcsapiUz7TPwViPhEnHspovLExjtbnIAPhH5TBTwZtMjotcagrElpbmb3zqTL3N5YRh2wewTcHHg+xhaUr5UEkRafx4I/J2Wv2CzV3DRP6oHE/XyDswSbJ1k3HP2104YmAspu/m8wqjYOeVu95Aa85TJU5DIbISrVR+t1ntjZKM9MLeEcMqmQOmwC5UyTnhuTBLH12UPs7SDjG219ggwclUuJnoQQoyqAso72MqUDLSq3CUTDerAMx3stDdD6rKBNOMojge2bQf7YgsdaK3vwdwnwEmRzcC8YMDfMPtNgBPiE/uj7dPzkPOjS/QFvBSyGaGfRekAAAAASUVORK5CYII=" /></i>
+            </a>
           </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;"><a href="#">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAehJREFUSEvFVcFOU0EUPWd8b4aGNLJx48ayJgb6A9o/sG6Nibh0QQxfIPwBEsKWakhY6h8I/oDFH7CuXZkuHjOvzDVT+sh7r49SWhsmmdXMvefec8+cIRa8uOD8uB8A59wGRN4DaBFoTOpSgB6AU5Aftdbd8t2xDpxzmxQ5moU6Id9qrTv52AJAqJwiP2ZJnsUI2cx3UgSwtkPgzR0A/sL7NpRqAfgQ4gT4pI3ZzHKUAXoEnlQBhECIdEmuCNAYFdKNjWkOrG0L8GUE0NPGrFYCpNZKRfLzgfftWq3W6/f7j8J5vV7/M6KzI8BDAiu42sMVG3NdeKGDKoCB96tRFD2myGsReR5YEJEzen8sUZRUzWxqgIxPd3FxSPJdQR0iB9HS0lZq7VcAL/Jn0wOIbMfGfE6d+05gLZ9EgJ/amPXU2p1swLNQtBtpvZ86d0rgaQmgq41pzgWQo2if5FZBAORerPX2XBQNZUc2AWh6/wrks6HUyTMBTnh5uQylvpWVN/UMMl2DfFn2mTRJWlAqaP9anrfOwFl740MDENSSmdkGgPYNL/48NiacD9e8VjGGMdEqkiRpREr9uoMXjQNMMrtwe6F2nZUTOnmgVHhA4cOpNL/srgC/Rx/O3lQfzjz0VMXez5/8P7v4B+Ea4BlxiWPeAAAAAElFTkSuQmCC" /></i>
+            </a>
           </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;"><a href="#">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZxJREFUSEu1ldtNwzAUhv8TNT7qEyMAE1AmSEeACSgT0E4ATECZgDIBZYOOEDYoG8BT66SqkdvGci6+FKmWIkU58fl8br8JJ150Yv8IAoqiGEGpjIAB9o9euQLyBJj3mD99h3QCNlLebIEXAi58DhSwTIBJj3ne9V8noCyKKZR6OCp9RNNUiElzTwvwL+eVV6LXVIixDakBdFoU8OE6uQK+E2Bsp6OU8gnAo2EAt7a9BiikXBJw7gD8brbbQb/fX9r2JkDXRDBfWsD9q+4WUurNc/p3wTyq7OVqNUSSZFBqCKJhIy0mChNBIeWMgDtPYZ9TZp0ORKTSHMYASilzAFcxgGZaOvbkKfO1/m4DVKAtTQQRAKTMO99BQPWjC16u1wsQZU17C+DqoCBAyh8AZw3AV8q8k5VgkSMArdQqoF3kUJsCiK6BIroXQsxqEexmwT9oUQA97YLZCOQxUhEFIJ9U6Cg8YhcGhMSu6gTHVHsBdmGdamobDhfO1BK/TkCXwkYBTDT7K1ML2qLqjMM1WvvmGsTgnRyQj6D55IA/rTraGd7xXuwAAAAASUVORK5CYII=" /></i>
+            </a>
           </button>
         </div>
       </div>

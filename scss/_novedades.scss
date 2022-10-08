@@ -1,0 +1,61 @@
+.gridNovedades{ 
+    display: grid;
+    grid-template-areas:
+    "logoHeader logoHeader logoHeader logoHeader logoHeader"
+    "headerGrid headerGrid headerGrid headerGrid headerGrid "
+    ". tituloNovedades tituloNovedades tituloNovedades ."
+    ". imgVista imgVista imgVista ."
+    ". contratanosTexto contratanosTexto contratanosTexto ."
+    "footer footer footer footer footer";
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap:0px;
+    column-gap:10px;
+    @media (max-width:769px){
+      .gridNovedades{
+         grid-template-areas: 
+         "logoHeader"
+         "headerGrid"
+         "imgVista"
+         "footer";
+         grid-template-columns: 100%;
+         grid-template-rows: repeat(4,auto);
+         row-gap: 0px;
+      }
+      .contratanosTexto{ display: none;}
+      .tituloNovedades{display: none;}
+    }
+ }
+.imgVista{grid-area: imgVista;
+   display:grid;
+   grid-template-areas: 
+   ". imgAsistencia imgCabify imgGrua .";
+   grid-template-rows: auto;
+   grid-template-columns: 5% 30% 30% 30% 5%;
+   justify-content: center;
+   column-gap: 20px;
+   align-content: center;
+}
+   @media (max-width:769px){
+      .imgVista{
+         grid-template-areas: 
+            "imgAsistencia"
+            "imgCabify"
+            "imgGrua";
+         grid-template-columns: 100%;
+         grid-template-rows: repeat(auto);
+         row-gap: 5px;
+         justify-content: center;
+         align-content: center;
+         margin-right: 30px;
+         }
+}
+.logoHeader{ grid-area: logoHeader;display: flex;flex-direction: column;text-align: center;}
+.headerGrid{ grid-area: headerGrid;display: flex;flex-direction: column;text-align: center;justify-content: center;align-items: center;background-color: black; margin-bottom: 20px;}
+footer{ grid-area: footer;}
+.tituloNovedades{ grid-area: tituloNovedades;display:flex; flex-direction: column; text-align:center;}
+.contratanosTexto{ grid-area: contratanosTexto;display: flex; flex-direction: column; text-align: center;}
+.contratanosImagenes{ grid-area: contratanosImagenes;}
+.imgAsistencia{grid-area: imgAsistencia;width:100%;display: flex;flex-direction: column;text-align: center;justify-content: center;}
+.imgCabify{grid-area: imgCabify; width: 100%;display: flex;flex-direction: column;text-align: center;justify-content: center;}
+.imgGrua{grid-area: imgGrua; width: 100%;display: flex;flex-direction: column;text-align: center;justify-content: center;} 

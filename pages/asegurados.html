@@ -28,30 +28,32 @@
     <header>
         <div class="row bg-black">
             <div class="col-lg-3 bg-black"></div>
-            <div class="col-12 col-lg-6 bg-black">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-12 col-lg-6">
+                <nav class="navbar navbar-expand-lg mb-4 navegador navbar-dark">
                   <div class="container-fluid">
-                    <a class="navbar-brand" href="#">HOME</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                       aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse navList" id="navbarSupportedContent">
+                      <ul class="navbar-nav">
                           <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="pages/productores.html">PRODUCTORES</a>
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">HOME</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="productores.html">PRODUCTORES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/asegurados.html">ASEGURADOS</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">ASEGURADOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/novedades.html">NOVEDADES</a>
+                            <a class="nav-link active text-white" aria-current="page" href="novedades.html">NOVEDADES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                            <a class="nav-link active text-white" aria-current="page" href="contacto.html">CONTACTO</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!--<li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             COBERTURAS
@@ -61,7 +63,7 @@
                             <li><a class="dropdown-item" href="#">GALENO</a></li>
                             <li><a class="dropdown-item" href="#">EXPERTA</a></li>
                           </ul>
-                        </li>
+                        </li>-->
                       </ul>
                     </div>
                   </div>
@@ -71,48 +73,117 @@
             <div class="col-lg-3 bg-black"></div>
           </div> 
     </header>
-        <main>
-            <div class="Preguntasfrencuentes__info">
-                    <h1 class="preguntasfrecuentes_titulo">Preguntas Frecuentes</h1>
-                    <p class="preguntas__frecuentes">
-                    ¿Cómo debo realizar un reclamo ante otra compañía?
-                    Para realizar un reclamo ante otra companía deberá contar con: 
-                    - Fotocopia de cédula verde o título automotor
-                    - Fotocopia de registro de conductor
-                    - Fotocopia DNI del asegurado
-                    - Fotos de la unidad donde se vea el auto completo, la patente y el daño.
-                    - Copia de denuncia administrativa realizada en su aseguradora
-                    - Certificado de cobertura actualizado a la fecha del siniestro
-                    - Un presupuesto detallado
-                    Si Usted no puede realizar el reclamo PROASEG pone a disposición su departamento legal
-                      ¿Que debo hacer ante un siniestro?
-                      Nombre y apellido | DNI | Teléfono y dirección | Tipo de Registro y Vencimiento 
-                      | Datos del Titular del Vehículo (si no es el conductor) | Marca y Modelo del Vehículo 
-                      | Chasis y Dominio (patente) | Compañía Aseguradora.
-                      Si el siniestro fuera en cadena, tomar datos de todos los vehículos intervinientes. Dar un rápido aviso a la compañía.
-                      Esta obligación fue oportunamente reglamentada por la Superintendencia de Seguros de la Nación, mediante el dictado de las Resoluciones 21.999/22.058 
-                      la Circular 3.809, que establecieron el formulario-tipo que las entidades aseguradoras deben extender para que el titular del automotor pueda acreditar 
-                      la existencia del contrato de seguro y su respectiva vigencia.
-                      En esa materia, en la XXXVII Asamblea del Consejo Federal de Seguridad Vial celebrada en la ciudad de Ushuaia los días 5 y 6 de diciembre del 2006, se concluyó 
-                      que "PARA PODER CIRCULAR, NO SE DEBERÍA REQUERIR EL COMPROBANTE DE PAGO DE LA COBERTURA, DEBIENDO SER EXIGIBLE ÚNICAMENTE EL COMPROBANTE MENCIONADO EN LA RESOLUCIÓN 21.999"
-                      decidiéndose asimismo solicitar que la Superintendencia de Seguros de la Nación se expidiera al respecto</p>
+    <!--CARRUSEL-->
+  <div class="row mb-2 centrado">
+    <div class="col-12 col-lg-10 "> 
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/monopatin.jpg" class="d-block w-100" alt="monopatin">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/bici.jpg" class="d-block w-100" alt="bici">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/moto.jpg" class="d-block w-100" alt="moto">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+        <main class="mt-4 mb-4 mx-2">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Qué debo hacer en un siniestro?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Hay que tener en cuenta que cuantos mejores datos puedas recabar, mas fácil va a ser
+                    determinar responsabilidades y llevar a cabo los reclamos que correspondan
+                    Deberás solicitar:
+                    <ul>
+                      <li>- Nombre y apellido, DNI, teléfono y dirección, Licencia de conducir</li>
+                      <li>- Marca y Modelo del Vehículo, Cédula verde, Dominio (patente) y Tarjeta de Seguro.</li>
+                      <li>- Es de gran ayuda tomar fotos del siniestro, de los daños, ubicación, etc.</li>
+                      <li>- Si el siniestro fuera en cadena, tomar datos de todos los vehículos intervinientes.</li>
+                    </ul>
+                    Podes avisarnos a nosotros así como a la compañía.
+                    La ley 17.418 de seguros en el artículo 46 establece que el asegurado debe denunciar el
+                    siniestro a la aseguradora dentro de los 3 días de conocerlo.
+                </div>
+              </div>
             </div>
-            <div class="asegurados">
-                <a href=""> <img src="../assets/novedades.png" height="400px" width="1500"></a>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Qué documentación necesito para circular?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Al recibir tu póliza adjuntamos la Tarjeta de Circulación Obligatoria. 
+                    <ul>
+                      <li>Ahí figuran los datos del vehículo asegurado y la cobertura contratada, asi como los teléfonos en caso de que necesites asistencia.</li>
+                      <li>Desde el año 2018 se puede circular con este comprobante en forma digital.</li>
+                    </ul>  
+                </div>
+              </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿ Como debo realizar un reclamo ante un tercero?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Te podemos asesorar para que lo gestiones por tu cuenta, o poner un abogado a tu disposición.
+                  Para realizar un reclamo ante otra compañía deberá contar con:
+                  <ul>
+                    <li>- Fotocopia de cédula verde o título automotor</li>
+                    <li>- Fotocopia de licencia de conductor</li>
+                    <li>- Fotocopia DNI del asegurado</li>
+                    <li>- Fotos del siniestro: auto completo, la patente y daños.</li>
+                    <li>- Copia de denuncia administrativa realizada en su aseguradora</li>
+                    <li>- Certificado de cobertura actualizado a la fecha del siniestro</li>
+                    <li>- Un presupuesto detallado</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
         <footer>
             <div class="row"> 
               <div class="col-12 col-lg-12"> 
                 <div class="container justify-content-center py-5">
-                  <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;">
+                  <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;"><a href="#">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZlJREFUSEvdVdtVwkAQvcMhu+RLO5AODBWIFRgrUCsQK1AqMCXQgaEC6UDoIFQgfMFuQsazQjRvIh5+2K+c3Zl7Z+7enRCOvOjI+DgxAmY+J6JFnWwmJtL6EYALwGEgIGBkSTk0eZFSbltKP8HISKSVCkDkCiGmVSThej0B0VXJuclxmPlJdDpegUBr7RDzB4AF4vjWsu1JHiQVU8U/ZWAGIi8pMtNBqBT/ZBJ5bcsapiUz7TPwViPhEnHspovLExjtbnIAPhH5TBTwZtMjotcagrElpbmb3zqTL3N5YRh2wewTcHHg+xhaUr5UEkRafx4I/J2Wv2CzV3DRP6oHE/XyDswSbJ1k3HP2104YmAspu/m8wqjYOeVu95Aa85TJU5DIbISrVR+t1ntjZKM9MLeEcMqmQOmwC5UyTnhuTBLH12UPs7SDjG219ggwclUuJnoQQoyqAso72MqUDLSq3CUTDerAMx3stDdD6rKBNOMojge2bQf7YgsdaK3vwdwnwEmRzcC8YMDfMPtNgBPiE/uj7dPzkPOjS/QFvBSyGaGfRekAAAAASUVORK5CYII=" /></i>
+                    </a>
                   </button>
-                  <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;">
+                  <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;"><a href="#">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAehJREFUSEvFVcFOU0EUPWd8b4aGNLJx48ayJgb6A9o/sG6Nibh0QQxfIPwBEsKWakhY6h8I/oDFH7CuXZkuHjOvzDVT+sh7r49SWhsmmdXMvefec8+cIRa8uOD8uB8A59wGRN4DaBFoTOpSgB6AU5Aftdbd8t2xDpxzmxQ5moU6Id9qrTv52AJAqJwiP2ZJnsUI2cx3UgSwtkPgzR0A/sL7NpRqAfgQ4gT4pI3ZzHKUAXoEnlQBhECIdEmuCNAYFdKNjWkOrG0L8GUE0NPGrFYCpNZKRfLzgfftWq3W6/f7j8J5vV7/M6KzI8BDAiu42sMVG3NdeKGDKoCB96tRFD2myGsReR5YEJEzen8sUZRUzWxqgIxPd3FxSPJdQR0iB9HS0lZq7VcAL/Jn0wOIbMfGfE6d+05gLZ9EgJ/amPXU2p1swLNQtBtpvZ86d0rgaQmgq41pzgWQo2if5FZBAORerPX2XBQNZUc2AWh6/wrks6HUyTMBTnh5uQylvpWVN/UMMl2DfFn2mTRJWlAqaP9anrfOwFl740MDENSSmdkGgPYNL/48NiacD9e8VjGGMdEqkiRpREr9uoMXjQNMMrtwe6F2nZUTOnmgVHhA4cOpNL/srgC/Rx/O3lQfzjz0VMXez5/8P7v4B+Ea4BlxiWPeAAAAAElFTkSuQmCC" /></i>
+                    </a>
                   </button>
-                  <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;">
+                  <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #f7c266;"><a href="#">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZxJREFUSEu1ldtNwzAUhv8TNT7qEyMAE1AmSEeACSgT0E4ATECZgDIBZYOOEDYoG8BT66SqkdvGci6+FKmWIkU58fl8br8JJ150Yv8IAoqiGEGpjIAB9o9euQLyBJj3mD99h3QCNlLebIEXAi58DhSwTIBJj3ne9V8noCyKKZR6OCp9RNNUiElzTwvwL+eVV6LXVIixDakBdFoU8OE6uQK+E2Bsp6OU8gnAo2EAt7a9BiikXBJw7gD8brbbQb/fX9r2JkDXRDBfWsD9q+4WUurNc/p3wTyq7OVqNUSSZFBqCKJhIy0mChNBIeWMgDtPYZ9TZp0ORKTSHMYASilzAFcxgGZaOvbkKfO1/m4DVKAtTQQRAKTMO99BQPWjC16u1wsQZU17C+DqoCBAyh8AZw3AV8q8k5VgkSMArdQqoF3kUJsCiK6BIroXQsxqEexmwT9oUQA97YLZCOQxUhEFIJ9U6Cg8YhcGhMSu6gTHVHsBdmGdamobDhfO1BK/TkCXwkYBTDT7K1ML2qLqjMM1WvvmGsTgnRyQj6D55IA/rTraGd7xXuwAAAAASUVORK5CYII=" /></i>
+                    </a>                  
                   </button>
                 </div>
               </div>
